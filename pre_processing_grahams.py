@@ -55,12 +55,12 @@ def circle_crop(p, sigmaX=10):
 
 
 #
-df = pd.read_csv('IDRID/train.csv')
+df = pd.read_csv('messidor_2/data.csv')
 
 def run():
     for idx, row in df.iterrows():
-        path = f"IDRID/train/{row['id_code']}.jpg"
+        path = f"messidor_2/dataset/{row['id_code']}"
         image = circle_crop(path, sigmaX=30)
-        cv2.imwrite(f"pre_processing_1/IDRID/train/{row['id_code']}.jpg", image)
+        cv2.imwrite(f"pre_processing_1/messidor_2/train/{row['id_code']}", image)
 
 

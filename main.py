@@ -1,4 +1,4 @@
-import circle_crop
+import pre_processing_grahams
 
 if __name__ == '__main__':
-    circle_crop.run()
+    pre_processing_grahams.run()
