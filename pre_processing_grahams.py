@@ -61,6 +61,7 @@ def run():
     for idx, row in df.iterrows():
         path = f"messidor_2/dataset/{row['id_code']}"
         image = circle_crop(path, sigmaX=30)
-        cv2.imwrite(f"pre_processing_1/messidor_2/train/{row['id_code']}", image)
+        print(cv2.imwrite(f"pre_processing_1/messidor_2/train/{row['id_code']}", image))
+        print(row['id_code'])
 
 
